@@ -48,7 +48,7 @@
 			- Legacy
 			- lowest cost bootable volume	
 - You cannot mount 1 EBS volume to multiple EC2 instances use EFS 
-			
+
 > Ec2 Instance Types: FIGHT DR MC PX
 
 - Termination protection is turned off by default
@@ -56,4 +56,30 @@
 - EBS root volume 
 	- Default AMI cannot be enrypted
 	- You can use third party tools for encryption or can encrypt when creating a copy of AMI
-- Additional volume can be encrypted			
+- Additional volume can be encrypted
+
+> Volumes will **ALWAYS** be in the same availability zone as the EC2 instance
+
+- You can change ESB volume on the fly - size, storage type
+- Snapshots exist on S3, but you cannot see them
+- Snapshots are incremental
+- Snapshots of encrypted Volume are encrypted automatically
+- Volumes restored from encrypted snapshot => encryted
+- Share snapshots = should be encrypted. Can be shared with other account or made public
+
+- To move EBS Volume from one availibility zone/ region to another availibility zone/region you need to create a snapshot of the volume then copy it to another AZ/Region and create an image from that snapshot	
+
+> Snapshot = Backup; images = create new EC2 Volume from
+
+
+#### Security groups
+- Changes to security groups effects immediately
+- All inbound traffic is blocked by default
+- All outbound traffic is allowed by default		
+- You can have any number of EC2 instances within a security group
+- You can have multiple security groups for a EC2 instance
+- Security groups are statefull	(Network Access Control Lists are stateless)
+	- When you add an inbound rule outbound rule is automatically addedd
+- You **cannot** block specific IP addresses using security groups instead use Network Access Control Lists
+- You can specify allow rules, but not deny rules
+
