@@ -1,4 +1,4 @@
-#AWS Developer Associate
+# AWS Developer Associate
 - AWS Infrastructure
 - [Compute](#compute)
 - [Storage](#storage)
@@ -9,7 +9,7 @@
 - [Security & Identity & Compliance](#security_identity_compliance)
 - [Application Integrations](#application_integrations)
 
-#Regions, AZ, Edge locations
+# Regions, AZ, Edge locations
 - Regions 
 	- Geographical distinct regions
 - Avalibility Zones (AZ) 
@@ -19,8 +19,8 @@
 	- Amazons CDN 
 	- Caching data 
 
-#Compute
-###[EC2](./aws-ec2.md)
+# Compute
+### [EC2](./aws-ec2.md)
 -	Virtual machines
 -	Dedicated machines
 
@@ -127,141 +127,141 @@
 ### Cloud9
 - IDE environment
 
-#Management Tools
+# Management Tools
 ### CloudWatch
 - Monitoring Service
 
-###CloudFormation
+### CloudFormation
 - Way of scripting infratructure
 
-###CloudTrail
+### CloudTrail
 - Log changes to AWS environment
 - Stores records for 1 week
 - Turned on by default
 
-###Config
+### Config
 - Monitors config of entire AWS environment
 
-###OpsWorks
+### OpsWorks
 - Chef and puppet - Automating environment, config
 
-###Service Catalog
+### Service Catalog
 - Managing group of IT Services that are approved to use on AWS
 - Used for Govenance and complience requiremnets
 
-###Systems Manager
+### Systems Manager
 - Managing AWS resources
 - Typically EC2 services for patching etc
 
-###Trusted Advisor
+### Trusted Advisor
 - Gives advice around multiple diciplines like Security, ports open, not using aws services as much as you can
 
-###Manage Services
+### Manage Services
 - Manage service for your cloud
 
-#Media Services
-###Elastic Transcoder
-###Media Convert
-###Media Live
-###Media Package
-###Media Store
-###Media Trailor
+# Media Services
+### Elastic Transcoder
+### Media Convert
+### Media Live
+### Media Package
+### Media Store
+### Media Trailor
 
-#Machine Learning
-###SageMaker
+# Machine Learning
+### SageMaker
 - Deep learning
 
-###Comprehend
+### Comprehend
 - Centiment analysis
 
-###DeepLens
+### DeepLens
 - Physical piece of hardware; artificially aware camera
 
-###Lex
+### Lex
 - Amazon Alexa service
 
-#Machine Learning
+# Machine Learning
 
-###Polly
+### Polly
 - Takes text and turns it into speech
 
-###Rekognition
+### Rekognition
 - video & picture
 
-###Amazon Translate
+### Amazon Translate
 - Traslate english into other languages
 
-###Amazon Transcribe
+### Amazon Transcribe
 - Automatic speech recognition; speech into text
 
-#Analytics
-###Athena
+# Analytics
+### Athena
 - Run SQL queries in the S3 buckets
 
-###EMR - Elastic map reduce
+### EMR - Elastic map reduce
 - Processing large amount of data
 
-###Cloud Search
+### Cloud Search
 
 ### Elastic Search Service
 
-###Kinesis
+### Kinesis
 - Ingesting large amount of data into AWS like social media feeds, tweets, hash tags
 
-###Kinesis Video Streams
+### Kinesis Video Streams
 
-###QuickSight
+### QuickSight
 - Business intelligence tool
 
-###Data pipeline
+### Data pipeline
 - Moving data between services
 
-###Glue
+### Glue
 - ETL: Extract Transform and Load
 
 
-#Security & Identity & Compliance
-###[IAM - Identity Access Managment](./aws-iam.md)
+# Security & Identity & Compliance
+### [IAM - Identity Access Managment](./aws-iam.md)
 
-###Cognito
+### Cognito
 - Authentication service to give temporory access to AWS using mobile devices
 
-###Guard Duty
+### Guard Duty
 - Monitors malaciious activities on AWS account
 
-###Inspector
+### Inspector
 - Install on EC2 instances to check for vurnalabilities
 
-###Macie
+### Macie
 - Scan S3 bucket for Personally Identifiable Information and give alert 
 
-###Certificate manager
+### Certificate manager
 - Managing SSL certificates
 
-###CloudHSM - Hardware security module
+### CloudHSM - Hardware security module
 - Dedicate hardware to store keys to access EC2 instances and other encryption keys 
  
 ### Directory Services
 - Itegrating microsoft directory services with AWS
 
-###WAF - Web application firewall
+### WAF - Web application firewall
 - Stops SQL injection, CSRF etc
 
-###Shield
+### Shield
 - Prevents DDOS (Distributed Denial of Service) attack
 
-###Artifact
+### Artifact
 - Portal to access and download AWS compliant reports
 - Manage select aggrements
 
-#Mobile Services
-###Mobile Hub
+# Mobile Services
+### Mobile Hub
 - Managment console for mobile applications
 
-###Pinpoint
+### Pinpoint
 - Target push notifications
 
-###AWS AppSync
+### AWS AppSync
 - Updates data in web and mobile application
 
 ###Device Farm
@@ -279,11 +279,11 @@
 ### Amazon MQ
 - Message queue
 
-###SNS - Simple Notification Service
+### SNS - Simple Notification Service
 
-###SQS - Simple Queue Service
+### SQS - Simple Queue Service
 
-###SWF - Simple Work Flow
+### SWF - Simple Work Flow
 
 # Customer Engagement
 ### Connect
@@ -291,28 +291,28 @@
 
 ### Simple Email Service
 
-#Business Connectivity
-###Alexa for Business
+# Business Connectivity
+### Alexa for Business
  - Reorder ink, alert IT printer is broken etc
  
-###Chime
+### Chime
 - Video conferencing
 
-###Work Doc
+### Work Doc
  
-###Work Mail
+### Work Mail
 
-#Desktop and App streaming
+# Desktop and App streaming
 ### Workspaces
 - VDI solution, operating system in the cloud
 
-###AppStream 2.0
+### AppStream 2.0
 - Similar to Citris
  
 #Internet of Things
 ### iOT 
 
-###iOT Device Management
+### iOT Device Management
 
 ### FreeRTOS
 - Opearting system for micro controllers
@@ -321,39 +321,9 @@
 - Software to let you run local compute, messaging, data cache, machine learning interface capabilities for connected devices in a secure way 
  
  
-#Game Developer
-###GameLift
+# Game Developer
+### GameLift
 - Service to develop games
-
- 
- 
-
-
-# EC2
-EC2 Classic does not have a default VPC
-EC2 instance are always created inside a VPC
-
-**Key pair** (Network & Security - Key Pair) is used to **access the ssh** - specific to each region
-
-**Security groups** - **firewall** to control the inbound and outbond traffic to instance level - specific to each region 
-
-#Best practices
-- Create IAM - user / group and always use this user instead of the root user
-
-#VPC
-virtual network dedicated to your AWS account (logically separated)
-
-*subnet* is a range of IP addresses in your VPC
-
-```
-			private
-	subnet 1 		
-	|		Public-- (Elastic IP address)
-VPC	|							|--> Internet gateway
-	|		public-- (Elastic IP address) 
-	subnet 2 
-			private		
-```	
 
 # Terms
 - IAM - Identity Access Managment
