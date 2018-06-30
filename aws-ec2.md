@@ -1,4 +1,4 @@
-#EC2
+# EC2
 
 - on Demand
 	- low cost and flexibility
