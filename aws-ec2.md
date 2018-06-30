@@ -65,12 +65,16 @@
 - Snapshots are incremental
 - Snapshots of encrypted Volume are encrypted automatically
 - Volumes restored from encrypted snapshot => encryted
-- Share snapshots = should be encrypted. Can be shared with other account or made public
+- Share snapshots = should **NOT** be encrypted. Can be shared with other account or made public
 
-- To move EBS Volume from one availibility zone/ region to another availibility zone/region you need to create a snapshot of the volume then copy it to another AZ/Region and create an image from that snapshot	
+#### Move Volume 
 
-> Snapshot = Backup; images = create new EC2 Volume from
-
+- Move EBS Volume - different AZ : 
+	- Create snapshot - create volume from snapshot
+- Move EBS Volume - different Region: 
+	- Create snapshot - copy snapshot to different region - create volume from snapshot
+	- Create snapshot - create image from snapshot - Copy image to different region - create instance from image
+	- Create image from the instance - Copy the image to a different region
 
 #### Security groups
 - Changes to security groups effects immediately
