@@ -1,15 +1,17 @@
 # AWS Developer Associate
-- AWS Infrastructure
+- [AWS Infrastructure](#AWS-Infrastructure)
 - [Compute](#compute)
 - [Storage](#storage)
 - [Databases](#databases)
-- [Networking & Content delivery](#network-content-delivery)
+- [Networking & Content delivery](#Network-Content-Celivery)
 - [Management Tools](#management-tools)
 - [Analytics](#analytics)
 - [Security & Identity & Compliance](#security-identity-compliance)
 - [Application Integrations](#application-integrations)
 
-# Regions, AZ, Edge locations
+# AWS Infrastructure
+
+### Regions, AZ, Edge locations
 - Regions 
 	- Geographical distinct regions
 - Avalibility Zones (AZ) 
