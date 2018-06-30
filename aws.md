@@ -20,7 +20,7 @@
 	- Caching data 
 
 #Compute
-###[EC2](./aws-ec2.md.html)
+###[EC2](./aws-ec2.md)
 -	Virtual machines
 -	Dedicated machines
 
@@ -221,7 +221,7 @@
 
 
 #Security & Identity & Compliance
-###[IAM - Identity Access Managment](./aws-iam.md.html)
+###[IAM - Identity Access Managment](./aws-iam.md)
 
 ###Cognito
 - Authentication service to give temporory access to AWS using mobile devices
