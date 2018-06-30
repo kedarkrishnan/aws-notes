@@ -1,17 +1,17 @@
-# AWS Developer Associate
-- [AWS Infrastructure](#AWS-Infrastructure)
+#AWS Developer Associate
+- [AWS Infrastructure](#aws-infrastructure)
 - [Compute](#compute)
 - [Storage](#storage)
 - [Databases](#databases)
-- [Networking & Content delivery](#Network-Content-Celivery)
+- [Networking & Content delivery](#network-content-delivery)
 - [Management Tools](#management-tools)
 - [Analytics](#analytics)
 - [Security & Identity & Compliance](#security-identity-compliance)
 - [Application Integrations](#application-integrations)
 
-# AWS Infrastructure
+##AWS Infrastructure
 
-### Regions, AZ, Edge locations
+####Regions, AZ, Edge locations
 - Regions 
 	- Geographical distinct regions
 - Avalibility Zones (AZ) 
@@ -21,249 +21,249 @@
 	- Amazons CDN 
 	- Caching data 
 
-# Compute
-### [EC2](./aws-ec2.md)
+##Compute
+####[Elastic Compute Cloud - EC2](./aws-ec2.md)
 -	Virtual machines
 -	Dedicated machines
 
-### EC2 cloud container 
+####EC2 cloud container 
 - Run and manage Docker container
 
-### Elastic beanstalk 
+####Elastic beanstalk 
 - Upload and run the code
 
-### Lamdba
+####Lamdba
 - Control when it executes
 - Dont have to worry about underlying virtual machines
 
-### Lightsail
+####Lightsail
 - Virtual Private Service (VPS)
 - Provisions a server and gives a fixed IP address
 - Which can be access using RDP - Remote Desktop for windows or SSH for linix
 - Gives a managment console
 
-### Batch
+####Batch
 - Batch computing
 
-# Storage
-### S3 - Simple Storage Service
+##Storage
+####S3 - Simple Storage Service
 - Object based storage
 
-### EFS - Elastic file system
+####EFS - Elastic file system
 
-### Glaicier
+####Glaicier
 - Data archive
 
-### Snowball
+####Snowball
 - Migrating large about of data into cloud
 
-### Storage gateway
+####Storage gateway
 - Virtual appliances replicating data to S3
 
-# Databases
-### RDS
+##Databases
+####RDS
 - Relational database
 
-### Dynamo DB
+####Dynamo DB
 - Non Relational database
 
-### Elasticache
+####Elasticache
 - Caching service for database
 
-### Red Shift
+####Red Shift
 - Datawarehouse
 - Business Intelligence
 
-# Migration
+##Migration
 
-### AWS migration hub
+####AWS migration hub
 - Tracking service track integration
 
-### Application discovery Service
+####Application discovery Service
 - Tracking dependencies
 
-### Database Migration Service
+####Database Migration Service
 - Migrate databases from on-prem to aws
 
-### Server migration service
+####Server migration service
 - Migrate server to aws
 
-### Snowball
+####Snowball
 - Migrating large about of data into cloud
 
-# Network & Content delivery
-### VPC - Virtual Private Cloud
+##Network & Content delivery
+####VPC - Virtual Private Cloud
 - Virtual data center
 - Configure firewall, acl
 
-### Cloudfront
+####Cloudfront
 - Amazon's content delivery network
 
-### Route53
+####Route53
 - Amazon's DNS Server
 
-### API Gateway
+####API Gateway
 
-### Direct Connect
+####Direct Connect
 - Dedicated line from datacenter directly to Anazon's VPC
 
-# Developer Tools
-### CodeStar
+##Developer Tools
+####CodeStar
 - Collabarating with other deveopers
 
-### CodeCommit
+####CodeCommit
 - Store code
 
-### CodeBuild
+####CodeBuild
 - Compile, run test, produce deployable package
 
-### CodeDeploy
+####CodeDeploy
 - Deploy code to EC2, on Premises , lamda etc
 
-### CodePipeline
+####CodePipeline
 - CDS
 
-### X-Ray
+####X-Ray
 - Analyse and debug code
 
-### Cloud9
+####Cloud9
 - IDE environment
 
-# Management Tools
-### CloudWatch
+##Management Tools
+####CloudWatch
 - Monitoring Service
 
-### CloudFormation
+####CloudFormation
 - Way of scripting infratructure
 
-### CloudTrail
+####CloudTrail
 - Log changes to AWS environment
 - Stores records for 1 week
 - Turned on by default
 
-### Config
+####Config
 - Monitors config of entire AWS environment
 
-### OpsWorks
+####OpsWorks
 - Chef and puppet - Automating environment, config
 
-### Service Catalog
+####Service Catalog
 - Managing group of IT Services that are approved to use on AWS
 - Used for Govenance and complience requiremnets
 
-### Systems Manager
+####Systems Manager
 - Managing AWS resources
 - Typically EC2 services for patching etc
 
-### Trusted Advisor
+####Trusted Advisor
 - Gives advice around multiple diciplines like Security, ports open, not using aws services as much as you can
 
-### Manage Services
+####Manage Services
 - Manage service for your cloud
 
-# Media Services
-### Elastic Transcoder
-### Media Convert
-### Media Live
-### Media Package
-### Media Store
-### Media Trailor
+##Media Services
+####Elastic Transcoder
+####Media Convert
+####Media Live
+####Media Package
+####Media Store
+####Media Trailor
 
-# Machine Learning
-### SageMaker
+##Machine Learning
+####SageMaker
 - Deep learning
 
-### Comprehend
+####Comprehend
 - Centiment analysis
 
-### DeepLens
+####DeepLens
 - Physical piece of hardware; artificially aware camera
 
-### Lex
+####Lex
 - Amazon Alexa service
 
-# Machine Learning
+##Machine Learning
 
-### Polly
+####Polly
 - Takes text and turns it into speech
 
-### Rekognition
+####Rekognition
 - video & picture
 
-### Amazon Translate
+####Amazon Translate
 - Traslate english into other languages
 
-### Amazon Transcribe
+####Amazon Transcribe
 - Automatic speech recognition; speech into text
 
-# Analytics
-### Athena
+##Analytics
+####Athena
 - Run SQL queries in the S3 buckets
 
-### EMR - Elastic map reduce
+####EMR - Elastic map reduce
 - Processing large amount of data
 
-### Cloud Search
+####Cloud Search
 
-### Elastic Search Service
+####Elastic Search Service
 
-### Kinesis
+####Kinesis
 - Ingesting large amount of data into AWS like social media feeds, tweets, hash tags
 
-### Kinesis Video Streams
+####Kinesis Video Streams
 
-### QuickSight
+####QuickSight
 - Business intelligence tool
 
-### Data pipeline
+####Data pipeline
 - Moving data between services
 
-### Glue
+####Glue
 - ETL: Extract Transform and Load
 
 
-# Security & Identity & Compliance
-### [IAM - Identity Access Managment](./aws-iam.md)
+##Security & Identity & Compliance
+####[IAM - Identity Access Managment](./aws-iam.md)
 
-### Cognito
+####Cognito
 - Authentication service to give temporory access to AWS using mobile devices
 
-### Guard Duty
+####Guard Duty
 - Monitors malaciious activities on AWS account
 
-### Inspector
+####Inspector
 - Install on EC2 instances to check for vurnalabilities
 
-### Macie
+####Macie
 - Scan S3 bucket for Personally Identifiable Information and give alert 
 
-### Certificate manager
+####Certificate manager
 - Managing SSL certificates
 
-### CloudHSM - Hardware security module
+####CloudHSM - Hardware security module
 - Dedicate hardware to store keys to access EC2 instances and other encryption keys 
  
-### Directory Services
+####Directory Services
 - Itegrating microsoft directory services with AWS
 
-### WAF - Web application firewall
+####WAF - Web application firewall
 - Stops SQL injection, CSRF etc
 
-### Shield
+####Shield
 - Prevents DDOS (Distributed Denial of Service) attack
 
-### Artifact
+####Artifact
 - Portal to access and download AWS compliant reports
 - Manage select aggrements
 
-# Mobile Services
-### Mobile Hub
+##Mobile Services
+####Mobile Hub
 - Managment console for mobile applications
 
-### Pinpoint
+####Pinpoint
 - Target push notifications
 
-### AWS AppSync
+####AWS AppSync
 - Updates data in web and mobile application
 
 ###Device Farm
@@ -278,56 +278,51 @@
 ###Step Functions
 - Managing different Lamda functions
 
-### Amazon MQ
+####Amazon MQ
 - Message queue
 
-### SNS - Simple Notification Service
+####SNS - Simple Notification Service
 
-### SQS - Simple Queue Service
+####SQS - Simple Queue Service
 
-### SWF - Simple Work Flow
+####SWF - Simple Work Flow
 
-# Customer Engagement
-### Connect
+##Customer Engagement
+####Connect
 - Contact Center as a service, call center in the cloud
 
-### Simple Email Service
+####Simple Email Service
 
-# Business Connectivity
-### Alexa for Business
+##Business Connectivity
+####Alexa for Business
  - Reorder ink, alert IT printer is broken etc
  
-### Chime
+####Chime
 - Video conferencing
 
-### Work Doc
+####Work Doc
  
-### Work Mail
+####Work Mail
 
-# Desktop and App streaming
-### Workspaces
+##Desktop and App streaming
+####Workspaces
 - VDI solution, operating system in the cloud
 
-### AppStream 2.0
+####AppStream 2.0
 - Similar to Citris
  
 #Internet of Things
-### iOT 
+####iOT 
 
-### iOT Device Management
+####iOT Device Management
 
-### FreeRTOS
+####FreeRTOS
 - Opearting system for micro controllers
 
-### Greengrass
+####Greengrass
 - Software to let you run local compute, messaging, data cache, machine learning interface capabilities for connected devices in a secure way 
  
  
-# Game Developer
-### GameLift
+##Game Developer
+####GameLift
 - Service to develop games
-
-# Terms
-- IAM - Identity Access Managment
-- EC2 - Elastic Compute Cloud
-- VPC - Virtual Private Cloud

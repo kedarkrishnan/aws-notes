@@ -1,5 +1,5 @@
 # IAM
-`IAM is universal. It does not apply to regions`
+> IAM is universal. It does not apply to regions
 
 - Root account is the account created when you setup AWS account. It has the complete Admin.
 - New users have No permissions when first created
@@ -29,4 +29,4 @@
 
 - Arn: Amazon resource name
 
-`Identity broker checks with LDAP first then with AWS STS`
+> Identity broker checks with LDAP first then with AWS STS

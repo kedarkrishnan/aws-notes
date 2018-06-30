@@ -49,7 +49,7 @@
 			- lowest cost bootable volume	
 - You cannot mount 1 EBS volume to multiple EC2 instances use EFS 
 			
-`Ec2 Instance Types: FIGHT DR MC PX`
+> Ec2 Instance Types: FIGHT DR MC PX
 
 - Termination protection is turned off by default
 - on EBS-backed instances default action is for the root EBS volume to be deleted when instance is terminated
