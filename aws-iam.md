@@ -1,4 +1,4 @@
-#IAM
+# IAM
 `IAM is universal. It does not apply to regions`
 
 - Root account is the account created when you setup AWS account. It has the complete Admin.
@@ -11,12 +11,12 @@
 	- Ec2 instance to access S3
 - Policies = permissions
 
-###Security Token Service - STS
+### Security Token Service - STS
 - Federation
 - Federation with mobile apps
 - Cross Account Access
 
-####Terms
+#### Terms
 
 - Federation: Combine list of users from one service with list of users with other service
 
