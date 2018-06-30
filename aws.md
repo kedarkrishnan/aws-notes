@@ -3,10 +3,10 @@
 - [Compute](#compute)
 - [Storage](#storage)
 - [Databases](#databases)
-- [Networking & Content delivery](#network-content-delivery)
+- [Networking & Content delivery](#network--content-delivery)
 - [Management Tools](#management-tools)
 - [Analytics](#analytics)
-- [Security & Identity & Compliance](#security-identity-compliance)
+- [Security & Identity & Compliance](#security--identity--compliance)
 - [Application Integrations](#application-integrations)
 
 ## AWS Infrastructure
