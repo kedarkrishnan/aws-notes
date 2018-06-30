@@ -3,11 +3,11 @@
 - [Compute](#compute)
 - [Storage](#storage)
 - [Databases](#databases)
-- [Networking & Content delivery](#network_content_delivery)
-- [Management Tools](#management_tools)
+- [Networking & Content delivery](#network-content-delivery)
+- [Management Tools](#management-tools)
 - [Analytics](#analytics)
-- [Security & Identity & Compliance](#security_identity_compliance)
-- [Application Integrations](#application_integrations)
+- [Security & Identity & Compliance](#security-identity-compliance)
+- [Application Integrations](#application-integrations)
 
 # Regions, AZ, Edge locations
 - Regions 
@@ -40,14 +40,14 @@
 - Which can be access using RDP - Remote Desktop for windows or SSH for linix
 - Gives a managment console
 
-###Batch
+### Batch
 - Batch computing
 
-#Storage
-###S3 - Simple Storage Service
+# Storage
+### S3 - Simple Storage Service
 - Object based storage
 
-###EFS - Elastic file system
+### EFS - Elastic file system
 
 ### Glaicier
 - Data archive
@@ -58,11 +58,11 @@
 ### Storage gateway
 - Virtual appliances replicating data to S3
 
-#Databases
+# Databases
 ### RDS
 - Relational database
 
-###Dynamo DB
+### Dynamo DB
 - Non Relational database
 
 ### Elasticache
@@ -72,7 +72,7 @@
 - Datawarehouse
 - Business Intelligence
 
-#Migration
+# Migration
 
 ### AWS migration hub
 - Tracking service track integration
@@ -83,14 +83,14 @@
 ### Database Migration Service
 - Migrate databases from on-prem to aws
 
-###Server migration service
+### Server migration service
 - Migrate server to aws
 
 ### Snowball
 - Migrating large about of data into cloud
 
-#Network & Content delivery
-###VPC - Virtual Private Cloud
+# Network & Content delivery
+### VPC - Virtual Private Cloud
 - Virtual data center
 - Configure firewall, acl
 
@@ -100,28 +100,28 @@
 ### Route53
 - Amazon's DNS Server
 
-###API Gateway
+### API Gateway
 
 ### Direct Connect
 - Dedicated line from datacenter directly to Anazon's VPC
 
-#Developer Tools
+# Developer Tools
 ### CodeStar
 - Collabarating with other deveopers
 
 ### CodeCommit
 - Store code
 
-###CodeBuild
+### CodeBuild
 - Compile, run test, produce deployable package
 
-###CodeDeploy
+### CodeDeploy
 - Deploy code to EC2, on Premises , lamda etc
 
-###CodePipeline
+### CodePipeline
 - CDS
 
-###X-Ray
+### X-Ray
 - Analyse and debug code
 
 ### Cloud9
