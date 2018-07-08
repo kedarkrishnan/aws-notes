@@ -1,4 +1,4 @@
-#S3 - Simple Storage Service
+# S3 - Simple Storage Service
 
 - Object Storage Only
 - File - 0 to 5TB
