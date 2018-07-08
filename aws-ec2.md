@@ -25,6 +25,7 @@
 	- physical EC2 servers
 	- licensing which does not support multi-tenancy 
 
+> Ec2 Instance Types: FIGHT DR MC PX
 	
 ### EBS - Elastic block storage 
 -	Disk in cloud which is attached to EC2 instances
@@ -47,16 +48,14 @@
 		- Magnetic (Standard)
 			- Legacy
 			- lowest cost bootable volume	
-- You cannot mount 1 EBS volume to multiple EC2 instances use EFS 
-
-> Ec2 Instance Types: FIGHT DR MC PX
+- You cannot mount 1 EBS volume to multiple EC2 instances use EFS(block based storage) 
 
 - Termination protection is turned off by default
 - on EBS-backed instances default action is for the root EBS volume to be deleted when instance is terminated
 - EBS root volume 
 	- Default AMI cannot be enrypted
-	- You can use third party tools for encryption or can encrypt when creating a copy of AMI
-- Additional volume can be encrypted
+	- You can use third party tools for encryption or can encrypt - taking snapshot of the volume - create a copy of that snap with encryption - deploy the encrypted root device volume
+- Additional volume can be encrypted using console, CLI or API
 
 > Volumes will **ALWAYS** be in the same availability zone as the EC2 instance
 
@@ -87,3 +86,44 @@
 - You **cannot** block specific IP addresses using security groups instead use Network Access Control Lists
 - You can specify allow rules, but not deny rules
 
+#### CLI
+- Least Privilege
+- Create groups - assign users to groups
+- Group permisson are assigned using policy documents
+- Secret Access key 
+	- seen only onces. 
+	- Else Delete the access key and regernerate
+	- run aws configure again to set the new access key and secret key
+- Dont use just one access key - One key pair per developer
+- You can use CLI on your PC			
+
+***Commands***
+
+- aws configure
+- aws ec2 describe-instances
+- aws ec2 describe-images
+- aws ec2 run-instances - CREAT/ LAUNCH INSTANCES
+- aws ec2 start-instances - START INSTANCE
+- aws ec2 terminate-instances
+
+- aws s3 ls - LIST
+- aws s3 mb s3://<bucket name> - MAKE BUCKET
+- aws s3 cp <file> s3://<bucket name> - upload File	
+- aws s3 ls s3://<bucket name> - LIST inside a bucket
+	
+### Elastic Load Balancer
+
+- Application Load Balancer
+	- Operate at layer 7 
+	- application aware
+- Network Load Balancer
+	- Operate at layer 4
+	- TCP traffic
+	- Extreme performance
+- Classic Load Balancer (Elastic load balancers)
+	- Legacy
+	- Operate at layer 4 / 7
+	- Application stops responding load balancer throws 504 (Gateway timeout) 	
+	- load balance HTTP / HTTPS using X-Forwarded and sticky sessions
+	- X-Forwarded-For => Gives IPV4 address of your end user
+	

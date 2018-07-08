@@ -9,6 +9,11 @@
 - Groups
 - Roles => apply to resources 
 	- Ec2 instance to access S3
+	- Roles allow you not to use Access Id's and Secret Access keys
+	- Roles are always preferred
+	- Roles are controlled by policies
+	- You can change policy on a role and take IMMEDIATE affect
+	- You can ATTACH and DETACH roles without stoping EC2 instances
 - Policies = permissions
 
 ### Security Token Service - STS
