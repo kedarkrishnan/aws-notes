@@ -1,3 +1,10 @@
+- [Elastic Compute Cloud - EC2](./aws-ec2.md)
+- [Route53](./aws-r53.md)
+- [RDS](./aws-rds.md)
+- [S3 - Simple Storage Service](./aws-s3.md)
+	- [Cloudfront](./aws-s3.md#cloud-front)
+- [IAM - Identity Access Managment](./aws-iam.md)
+
 # AWS Developer Associate
 - [AWS Infrastructure](#aws-infrastructure)
 - [Compute](#compute)
@@ -46,7 +53,7 @@
 - Batch computing
 
 ## Storage
-#### S3 - Simple Storage Service
+#### [S3 - Simple Storage Service](./aws-s3.md)
 - Object based storage
 
 #### EFS - Elastic file system
@@ -61,7 +68,7 @@
 - Virtual appliances replicating data to S3
 
 ## Databases
-#### RDS
+#### [RDS](./aws-rds.md)
 - Relational database
 
 #### Dynamo DB
@@ -96,10 +103,10 @@
 - Virtual data center
 - Configure firewall, acl
 
-#### Cloudfront
+#### [Cloudfront](./aws-s3.md#cloud-front)
 - Amazon's content delivery network
 
-#### Route53
+#### [Route53](./aws-r53.md)
 - Amazon's DNS Server
 
 #### API Gateway
